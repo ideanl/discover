@@ -47,5 +47,8 @@ module Discover
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # sass stuff
+    config.sass.prefferd_syntax = :sass
   end
 end
