@@ -9,6 +9,10 @@ gem 'mysql2'
 
 gem 'bootstrap-sass'
 gem 'protected_attributes'
+gem 'haml-rails'
+gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'compass'
+gem 'compass-html5'
 
 # Gems used only for assets and not required
 # in production environments by default.

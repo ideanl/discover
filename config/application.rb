@@ -49,6 +49,6 @@ module Discover
     config.assets.version = '1.0'
 
     # sass stuff
-    config.sass.prefferd_syntax = :sass
+    config.sass.preffered_syntax = :sass
   end
 end
