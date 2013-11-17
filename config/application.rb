@@ -52,3 +52,5 @@ module Discover
     config.sass.preffered_syntax = :sass
   end
 end
+
+Discover::VERSION = "Build 1 (November 16, 2013)"

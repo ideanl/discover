@@ -1,5 +1,7 @@
 Discover::Application.routes.draw do
-  get "sessions/new"
+
+  root :to => "sessions#new"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
