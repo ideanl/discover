@@ -9,7 +9,7 @@
 development:
   adapter: mysql2
   database: discover 
-  username: noorassas
-  password: 9385516
-  host: localhost
+  username: labibij
+  password: 9386309
+  host: hulk.osd.wednet.edu
   socket: /var/run/mysqld/mysqld.sock
