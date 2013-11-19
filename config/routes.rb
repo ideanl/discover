@@ -1,5 +1,7 @@
 Discover::Application.routes.draw do
 
+  get "posts/new"
+  get "users/new"
   root :to => "sessions#new"
 
   get 'login' => 'sessions#new'
