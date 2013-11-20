@@ -53,4 +53,4 @@ module Discover
   end
 end
 
-Discover::VERSION = "Build 4 (November 19, 2013)"
+Discover::VERSION = "Build 5 (November 20, 2013)"
