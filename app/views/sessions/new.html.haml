@@ -1,3 +1,16 @@
 %h1#welcome Welcome to Discover
-%form.form-horizontal.well
-  .form-group
+.col-md-4.col-md-offset-4
+  = form_tag(sessions_path, method: :post, class: "form-horizontal well") do
+    .form-group
+      = label_tag 'email', 'Email', class: "control-label col-md-3"
+      .col-md-9
+        = email_field_tag 'email', nil, class: "form-control" 
+
+    .form-group
+      = label_tag 'password', 'Password', class: "control-label col-md-3"
+      .col-md-9
+        = email_field_tag 'password', nil, class: "form-control" 
+
+    .form-group-submit.form-group
+      .col-md-9.col-md-offset-3
+        = submit_tag "Login", class: "btn btn-primary"

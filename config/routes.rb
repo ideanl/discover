@@ -7,6 +7,8 @@ Discover::Application.routes.draw do
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
 
+  resource :sessions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -8,12 +8,12 @@
 %body
   = render 'layouts/header'
   .container
-    .row-fluid
+    .row
       .col-md-12
       = yield
 
-  %footer
-    %p.copyright
-      &copy; #{Date.today.year} Discover, All rights reserved
-    %p.version
-      = Discover::VERSION
+    %footer
+      %p.copyright
+        &copy; #{Date.today.year} Discover, All rights reserved
+      %p.version
+        = Discover::VERSION

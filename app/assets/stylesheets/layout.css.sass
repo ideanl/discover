@@ -1,51 +1,57 @@
-body
-  background-color: #DCF4FC
+html
+  height: 100%
 
-  .container
-    background-color: white
+  body
+    background-color: #DCF4FC
     height: 100%
 
-header
-  min-width: 976px
-  height: 55px
-  border-bottom: 1px solid #999
-  background-color: #8DEEEE
-  background: rgb(64,150,238) /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(64,150,238,1) 0%, rgba(122,188,255,1) 100%) /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,150,238,1)), color-stop(100%,rgba(122,188,255,1))) /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#7abcff',GradientType=0 ) /* IE6-9 */
-  
-  h1
-    font-family: 'Satisfy', cursive
-    display: inline
-    position: absolute
-    top: -7px
-    left: 45px
+    .container
+      background-color: white
+      padding-bottom: 25px
+      
+      footer
+        border-top: 1px solid #ccc
+        margin: 2em 0 0
+        margin-top: 0px
+        padding: 1em 0
+        clear: both
+        float: left
+        width: 100%
 
-  #logo
-    position: absolute
-    width: 55px
-    top: 5px
+        > p
+          color: #999
+          font-size: .9em
 
-footer
-  border-top: 1px solid #ccc
-  margin: 2em 0 0
-  margin-top: 0px
-  padding: 1em 0
-  clear: both
-  float: left
-  width: 100%
+          float: left
+          width: 50%
 
-  > p
-    color: #999
-    font-size: .9em
+          &:last-child
+            text-align: right
 
-    float: left
-    width: 50%
+    header
+      min-width: 976px
+      height: 55px
+      border-bottom: 1px solid #999
+      background-color: #8DEEEE
+      background: rgb(64,150,238) /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(64,150,238,1) 0%, rgba(122,188,255,1) 100%) /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,150,238,1)), color-stop(100%,rgba(122,188,255,1))) /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(64,150,238,1) 0%,rgba(122,188,255,1) 100%) /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#7abcff',GradientType=0 ) /* IE6-9 */
+      
+      h1
+        font-family: 'Satisfy', cursive
+        display: inline
+        position: absolute
+        top: -7px
+        left: 45px
 
-    &:last-child
-      text-align: right
+      #logo
+        position: absolute
+        width: 55px
+        top: 5px
+
+    
