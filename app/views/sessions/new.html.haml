@@ -15,6 +15,6 @@
       .col-md-9.col-md-offset-3
         = submit_tag "Login", class: "btn btn-primary"
       .col-md-5.col-md-offset-3#forgot-register
-        = submit_tag "Forgot Password?", class: "btn"
+        = submit_tag "Forgot Password?", class: "btn btn-default"
       .col-md-4#forgot-register
-        = button_to "Register", new_users_path, class:  "btn"
+        = link_to "Sign Up", new_users_path, class: "btn btn-default"
