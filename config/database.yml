@@ -10,8 +10,8 @@ development:
   adapter: mysql2
   encoding: utf8
   database: discover 
-  username: labibij
-  password: 9386309
+  username: 
+  password: 
   host: localhost
   socket: /var/run/mysqld/mysqld.sock
   pool: 5
