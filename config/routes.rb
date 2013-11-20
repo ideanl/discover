@@ -1,12 +1,12 @@
 Discover::Application.routes.draw do
-
-  get "posts/new"
-  get "users/new"
   root :to => "sessions#new"
+  get "posts/new"
+  get "register" => 'users#new'
 
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
 
+  resource :users
   resource :sessions
 
   # The priority is based upon order of creation:
