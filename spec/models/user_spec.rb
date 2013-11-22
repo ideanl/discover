@@ -1,4 +1,4 @@
-require 'rspec'
+require 'spec_helper'
 
 describe User do
   it "can be created" do
