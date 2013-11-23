@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe User do
-  context 'signing up' do
+  context 'when signing up' do
     before (:all) { @user = FactoryGirl.build(:user) } 
     it 'blank email' do
       @user.email = ''
