@@ -9,7 +9,7 @@ Discover::Application.routes.draw do
   get 'logout' => 'sessions#destroy'
 
   resource :users
-  resource :sessions
+  resource :sessions, only: [:new, :create, :destroy]
   resource :feeds
 
   # The priority is based upon order of creation:

@@ -7,9 +7,10 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     if @user.save
-      redirect_to feeds_path
+      flash[:success] = "User Successfully Created."
+      redirect_to login_path
     else
-      flash[:danger] = "Could not create user. Error: #{@user.errors.full_messages.join('. ')}"
+      flash.now[:danger] = "Could not create user. Error: #{@user.errors.full_messages.join('. ')}"
       render 'new'
     end
   end
