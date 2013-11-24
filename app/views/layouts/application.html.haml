@@ -13,8 +13,8 @@
         #flash
           - if flash
             - flash.each do |key, value|
-              .alert{ class: "alert-#{key}" }
-                %a.close{:'data-dismiss' => 'alert', href: '#'} &times;
+              .alert.alert-dismissable{ class: "alert-#{key}" }
+                %button.close{:'data-dismiss' => 'alert', :'aria-hidden' => 'true', type: 'button'} &times;
                 %p= value
         = yield
 

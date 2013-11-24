@@ -10,6 +10,7 @@ Discover::Application.routes.draw do
 
   resource :users
   resource :sessions
+  resource :feeds
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
