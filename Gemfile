@@ -9,6 +9,7 @@ gem 'mysql2'
 
 gem 'nokogiri'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby', '3.1.2'
 gem 'protected_attributes'
 gem 'haml-rails'
 gem 'compass-rails', '~> 2.0.alpha.0'

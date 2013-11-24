@@ -6,5 +6,7 @@ FactoryGirl.define do
     email "bob@discover.net"
     fname "Bob"
     lname "Smith"
+    password "123456"
+    password_confirmation "123456"
   end
 end
