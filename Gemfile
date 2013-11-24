@@ -7,6 +7,7 @@ gem 'rails', '4.0.1'
 
 gem 'mysql2'
 
+gem 'nokogiri'
 gem 'bootstrap-sass'
 gem 'protected_attributes'
 gem 'haml-rails'
@@ -28,6 +29,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'nokogiri'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'

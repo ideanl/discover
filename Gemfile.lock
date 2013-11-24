@@ -165,6 +165,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   mysql2
+  nokogiri
   protected_attributes
   rails (= 4.0.1)
   rspec-rails

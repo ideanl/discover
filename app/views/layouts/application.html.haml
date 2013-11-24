@@ -10,7 +10,13 @@
   .container
     .row
       .col-md-12
-      = yield
+        #flash
+          - if flash
+            - flash.each do |key, value|
+              .alert{ class: "alert-#{key}" }
+                %a.close{:'data-dismiss' => 'alert', href: '#'} &times;
+                %p= value
+        = yield
 
     %footer
       %p.copyright

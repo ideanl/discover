@@ -1,7 +1,9 @@
 Discover::Application.routes.draw do
   root :to => "sessions#new"
+
   get "posts/new"
-  get "register" => 'users#new'
+
+  get "signup" => 'users#new'
 
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
