@@ -17,5 +17,6 @@ class SessionsController < ApplicationController
   def destroy
     if logged_in?
       @current_user = nil
+    end
   end
 end
