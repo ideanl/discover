@@ -11,7 +11,7 @@ class FeedsController < ApplicationController
     if !logged_in?
       require_login
       flash[:warning] = "Please sign in"
-      redirect_to login_path unless logged_in?
+      redirect_to login_path
     end
   end
 end
