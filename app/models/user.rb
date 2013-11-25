@@ -1,6 +1,4 @@
 class User < ActiveRecord::Base
-  attr_accessible :username, :email, :fname, :lname, :password, :password_confirmation, :password_digest
-
   before_save { self.email = email.downcase }
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

@@ -15,8 +15,7 @@ module SessionsHelper
     end
 
     session[:user_id] = user.id
-    @current_user = user
-    @current_user
+    current_user
   end
 
   def current_user
@@ -24,7 +23,7 @@ module SessionsHelper
   end
 
   def logged_in?
-    @current_user != nil
+    !!current_user
   end
 
   def redirect_back_or_to(url)
