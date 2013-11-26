@@ -1,5 +1,5 @@
 Discover::Application.routes.draw do
-  root :to => "sessions#new"
+  root :to => "feeds#show"
 
   get "posts/new"
 
