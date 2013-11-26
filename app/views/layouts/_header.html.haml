@@ -2,10 +2,12 @@
   = link_to(root_url) do
     = image_tag "logo1.png", id: "logo"
     %h1#headlink iscover
-.container-main.container
-  %nav.navbar.navbar-default{role: 'navigation'}
-    %ul.nav.nav-tabs
-      %li.active
-        = link_to "Home", '#'
-      %li 
-        = link_to "Profile", '#'
+
+- if logged_in?
+  .container-main.container
+    %nav.navbar.navbar-default{role: 'navigation'}
+      %ul.nav.nav-tabs
+        %li.active
+          = link_to "Home", '#'
+        %li 
+          = link_to "Profile", '#'
