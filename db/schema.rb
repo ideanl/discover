@@ -11,9 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131125192006) do
+ActiveRecord::Schema.define(version: 20131126022948) do
 
   create_table "posts", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "profiles", force: true do |t|
+    t.string   "birthday"
+    t.string   "photo"
+    t.string   "job"
+    t.string   "school"
+    t.string   "birthplace"
+    t.string   "location"
+    t.string   "movies"
+    t.string   "books"
+    t.string   "shows"
+    t.string   "people"
+    t.string   "sports"
+    t.string   "teams"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

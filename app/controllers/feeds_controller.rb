@@ -10,7 +10,6 @@ class FeedsController < ApplicationController
   def signed_in_user
     if !logged_in?
       require_login
-      flash[:warning] = "Please sign in"
       redirect_to login_path
     end
   end

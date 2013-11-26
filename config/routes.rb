@@ -11,6 +11,7 @@ Discover::Application.routes.draw do
   resource :users
   resource :sessions, only: [:new, :create, :destroy]
   resource :feeds
+  resource :profiles, only: [:create, :edit, :update, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
