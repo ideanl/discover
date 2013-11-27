@@ -1,7 +1,8 @@
 Discover::Application.routes.draw do
   
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: %i(new create destroy)
+	resources :posts, only: %i(create show edit destroy)
   resources :feeds
   resources :profiles
 
