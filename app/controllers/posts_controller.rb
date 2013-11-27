@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 	def create
 		@post = Post.new(post_params)
 		if @post.save
-			flash[:success] = "Post successfully create!"
+			flash.now[:success] = "Post successfully create!"
 		else
 		flash.now[:danger] = "Post could not be created. Error: #{@user.errors.full_messages.join('. ')}"
 		render 'new'
