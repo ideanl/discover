@@ -5,7 +5,7 @@ Discover::Application.routes.draw do
   resources :feeds
   resources :profiles
 
-  root :to => "feeds#show"
+  root :to => "feeds#index"
 
   get "posts/new"
 

@@ -7,9 +7,11 @@
   .container-main.container#navbar-container
     %nav.navbar.navbar-default{role: 'navigation'}
       %ul.nav.nav-tabs
-        %li.active
-          = link_to "Home", '#'
-        %li 
-          = link_to "Profile", '#'
+        - home = 'active' if request.url == root_url && request.get?
+        - profile_active = 'active' if request.url == profiles_url && request.get?
+        %li{class: home }
+          = link_to "Home", root_url
+        %li{class: profile_active } 
+          = link_to "Profile", profiles_path
         %li
           = link_to "Logout", logout_path
