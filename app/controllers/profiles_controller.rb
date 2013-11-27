@@ -1,21 +1,21 @@
 class ProfilesController < ApplicationController
+  def create
 
-def create
+  end
 
-end
+  def show
 
-def show
+  end
 
-end
+  def edit
 
-def edit
+  end
 
-end
+  def update
 
-def update
+  end
 
-end
+  def destroy
 
-def destroy
-
+  end
 end

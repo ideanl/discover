@@ -1,4 +1,10 @@
 Discover::Application.routes.draw do
+  
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+  resources :feeds
+  resources :profiles
+
   root :to => "feeds#show"
 
   get "posts/new"
@@ -7,11 +13,6 @@ Discover::Application.routes.draw do
 
   get 'login' => 'sessions#new'
   get 'logout' => 'sessions#destroy'
-
-  resource :users
-  resource :sessions, only: [:new, :create, :destroy]
-  resource :feeds
-  resource :profiles
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
