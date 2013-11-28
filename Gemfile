@@ -15,6 +15,8 @@ gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'compass'
 gem 'compass-html5'
 gem 'therubyracer'
+gem 'jquery-ui-rails'
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
