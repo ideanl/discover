@@ -1,0 +1,21 @@
+.modal.fade#moviesModal{tabindex: '-1', role: 'dialog', :'aria-labelledby' => 'moviesModalLabel', :'aria-hidden' => 'true'}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{type: 'button', :'data-dismiss' => 'modal', :'aria-hidden' => 'true'} &times;
+        %h4.modal-title#moviesModalLabel Favorite Movies
+      .modal-body
+        %form.form-horizontal#movieform
+          %input.form-control#movieinput{type: 'text', name: 'movie', placeholder: 'Add a Movie', required: 'true'}
+          %button.btn.btn-primary#movieinputsubmit{type: 'button'} Add
+        
+        - @movies = Movie.where(id: MoviePeople.where(user_id: current_user).map(&:'movie_id'))
+        - if @movies
+          .panel.panel-default
+            .panel-body#movies-panel
+              - @movies.each do |movie|
+                %div
+                  = movie.name
+                  %button.close{type: 'button', :'aria-hidden' => 'true'} &times;
+      .modal-footer
+        %button.btn.btn-default{type: 'button', :'data-dismiss' => 'modal'}Close

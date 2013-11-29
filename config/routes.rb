@@ -4,7 +4,11 @@ Discover::Application.routes.draw do
   resources :sessions, only: %i(new create destroy)
 	resources :posts, only: %i(create show edit destroy)
   resources :feeds
-  resources :profiles
+  resources :profiles do
+    collection do
+      post :save_profile_interests
+    end
+  end
 
   root :to => "feeds#index"
 

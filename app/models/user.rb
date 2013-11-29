@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	has_many :posts, dependent: :destroy
+	has_many :movies
 	has_one :profile
   before_save { self.email = email.downcase }
 
