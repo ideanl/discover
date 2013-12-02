@@ -1,7 +1,7 @@
-%h1.text-center#coming-soon Feed
-.col-md-4.col-md-offset-4
-  .postbox
-    = form_for :post, url: posts_path, html: {class: "form-horizontal well"} do |f|
-      .form-group
-        .col-md-4
-          = f.text_field :post, class: "form-control", placeholder: "Discover is a social network provides you with stuff."
+%h1 Feed
+.col-md-8.well#postbox
+	.form-group
+		.col-md-10
+			%input.form-control#postboxinput{placeholder: "Discover is a social network provides you with stuff."}
+		.col-md-2
+			%button.btn.btn-primary#postboxsubmit{type: :button} Submit
