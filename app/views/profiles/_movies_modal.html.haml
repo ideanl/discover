@@ -16,6 +16,6 @@
               - @movies.each do |movie|
                 %div
                   = movie.name
-                  %button.close{type: 'button', :'aria-hidden' => 'true'} &times;
+                  %button.close#delmovie{type: 'button', :'aria-hidden' => 'true'} &times;
       .modal-footer
         %button.btn.btn-default{type: 'button', :'data-dismiss' => 'modal'}Close
