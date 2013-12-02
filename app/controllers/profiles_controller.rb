@@ -29,9 +29,9 @@ class ProfilesController < ApplicationController
 
   def save_profile_interests
   
-    @movie = Movie.where(name: params[:movie])
+    @movie = Hobby.where(name: params[:movie])
     unless @movie.count > 0
-      @movie = Movie.new(name: params[:movie])
+      @movie = Hobby.new(name: params[:movie])
       @movie.save
     end
 
