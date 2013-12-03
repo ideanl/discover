@@ -9,7 +9,8 @@
           %input.form-control#movieinput{type: 'text', name: 'movie', placeholder: 'Add a Movie', required: 'true'}
           %button.btn.btn-primary#movieinputsubmit{type: 'button'} Add
         
-        - @movies = Hobby.where(id: MoviePeople.where(user_id: current_user.id).map(&:'movie_id'))
+        - @movies = Hobby.where(hobby: 'movie', id: HobbyPerson.where(hobby: 'movie', user_id: current_user.id).map(&:'hobby_id'))
+        #panel-container
         - if @movies.count != 0
           .panel.panel-default#movies-panel
             .panel-body#movies-panel-body

@@ -28,15 +28,15 @@ class ProfilesController < ApplicationController
   end
 
   def save_profile_interests
-  
-    @movie = Hobby.where(name: params[:movie])
+ 
+    @movie = Hobby.where(hobby: 'movie', name: params[:movie])
     unless @movie.count > 0
-      @movie = Hobby.new(name: params[:movie])
+      @movie = Hobby.new(hobby: 'movie', name: params[:movie])
       @movie.save
     end
-
-    unless MoviePeople.where(user_id: current_user.id, movie_id: @movie.id).count > 0
-      MoviePeople.create(user_id: current_user.id, movie_id: @movie.id)
+  
+    unless HobbyPerson.where(hobby: 'movie', user_id: current_user.id, hobby_id: @movie.id).count > 0
+      HobbyPerson.create(hobby: 'movie', user_id: current_user.id, hobby_id: @movie.id)
     end
     
     data = {
